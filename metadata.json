@@ -1,0 +1,6 @@
+{
+  "name": "Silicon & Screen Portfolio",
+  "description": "Kian Rasti's personal portfolio website representing a screen-to-silicon design style, fusing modern minimalism with technical hardware and software capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

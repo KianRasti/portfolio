@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="logoCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0B1120" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="logoKite" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="45%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="72" height="72" rx="16" fill="url(#logoCard)" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="6" y="6" width="68" height="68" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1"/>
+  <polygon points="40,14 62,34 40,66 18,34" fill="url(#logoKite)"/>
+  <polygon points="40,14 62,34 40,36" fill="#E0F2FE" fill-opacity="0.5"/>
+  <polygon points="40,36 62,34 40,66" fill="#0369A1" fill-opacity="0.45"/>
+  <line x1="40" y1="14" x2="40" y2="66" stroke="#F8FAFC" stroke-opacity="0.6" stroke-width="1.4"/>
+  <line x1="18" y1="34" x2="62" y2="34" stroke="#F8FAFC" stroke-opacity="0.45" stroke-width="1.2"/>
+</svg>

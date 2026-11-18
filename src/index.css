@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Theme colors from the Silicon & Screen Design System */
+  --color-void-black: #050505;
+  --color-surface-high: #111111;
+  --color-surface-medium: #1A1A1A;
+  
+  --color-primary: #ffb59a;
+  --color-primary-container: #ff5c00;
+  --color-on-primary-container: #521800;
+  --color-primary-fixed-dim: #ffb59a;
+  
+  --color-secondary: #d3fbff;
+  --color-secondary-container: #00eefc;
+  --color-on-secondary-container: #00686f;
+  
+  --color-status-success: #00ff41;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #404040;
+  
+  --color-outline: #ab897d;
+  --color-surface-container: #2c1c16;
+  --color-on-surface: #fadcd2;
+  --color-on-surface-variant: #e4beb1;
+}
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: #ffb59a;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.grain-overlay {
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRqKCsEx9lZNZvQj7z-0JKYMbRgnZULzkkzG8q6i2NHl89rSzLK-ibzIexNAX8fcpO-ewdE9r3_7CCgCShCsIOHiA78hPRbRz9_Dq_fjw5VAko6IwEv0KBsLJwfNM3nkMOxthpG1vIyu9TbR7SfKTAHi1yngykvbHNK60XlTrTELsu1Am0i9KzEsSGHSqgXCCtjB5WTSpuvELD8U7SDi6D7YMiT_m_vWMeK6WBq-RvMQDnbYGV6M1M');
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.grid-bg {
+  background-image: linear-gradient(#111111 1px, transparent 1px), linear-gradient(90deg, #111111 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.technical-outline {
+  border: 1px solid #404040;
+}
