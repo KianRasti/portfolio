@@ -110,15 +110,20 @@ export default function ProjectCard({
                   {project.architectureFlow.map((node, i) => (
                     <div
                       key={node}
-                      className="bg-surface-medium/90 border border-text-muted/40 rounded px-2 py-1.5 font-mono text-[10px] text-text-primary flex items-center gap-1.5"
+                      className="bg-surface-medium/90 border border-text-muted/40 group-hover:border-text-muted/70 rounded px-2 py-1.5 font-mono text-[10px] text-text-primary flex items-center justify-between gap-1.5 transition-colors"
                     >
-                      <span
-                        className="font-bold shrink-0"
-                        style={{ color: project.accentColor }}
-                      >
-                        0{i + 1}
-                      </span>
-                      <span className="truncate">{node}</span>
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <span
+                          className="font-bold shrink-0"
+                          style={{ color: project.accentColor }}
+                        >
+                          0{i + 1}
+                        </span>
+                        <span className="truncate">{node}</span>
+                      </div>
+                      {i < project.architectureFlow.length - 1 && (
+                        <span className="text-[9px] text-text-muted shrink-0">→</span>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -225,7 +230,7 @@ export default function ProjectCard({
               <a
                 href={project.links.live}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center gap-1 px-2 py-1 rounded bg-void-black border border-text-muted/40 text-text-primary hover:border-primary"
               >
@@ -237,7 +242,7 @@ export default function ProjectCard({
               <a
                 href={project.links.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center gap-1 px-2 py-1 rounded bg-void-black border border-text-muted/40 text-text-primary hover:border-primary"
               >

@@ -66,9 +66,9 @@ export const projectsData: Project[] = [
     problemTr:
       'Kripto raid botları ve ortaklık sistemleri sahte hacim, Sybil saldırıları, anlık token satışı ve yüksek SaaS/RPC maliyetlerinden muzdariptir.',
     architecture:
-      'Architected a 6-service Node.js 20 monorepo communicating over Redis Streams (BullMQ fabric) and 5-schema PostgreSQL 16, featuring Sybil/funder DFS, a 4h balance monitor, a fail-closed treasury-pay-svc circuit breaker, and zero-inbound-port Cloudflare Tunnel ingress.',
+      'Architected a 6-service Node.js 20 monorepo communicating over Redis Streams (BullMQ fabric) and 5-schema PostgreSQL 16, featuring Sybil/funder DFS, a 4h balance monitor, a fail-closed treasury circuit breaker, and zero-inbound-port Cloudflare Tunnel ingress.',
     architectureTr:
-      'Redis Streams (BullMQ) ve 5 şemalı PostgreSQL 16 üzerinde haberleşen 6 servisli Node.js 20 monorepo; Sybil DFS, 4 saatlik bakiye izleyici, fail-closed treasury-pay-svc devre kesici ve sıfır açık portlu Cloudflare Tunnel ile tasarlandı.',
+      'Redis Streams (BullMQ) ve 5 şemalı PostgreSQL 16 üzerinde haberleşen 6 servisli Node.js 20 monorepo; Sybil DFS, 4 saatlik bakiye izleyici, fail-closed hazine devre kesici ve sıfır açık portlu Cloudflare Tunnel ile tasarlandı.',
     impact:
       'Achieved $0 SaaS tax and <$10/mo production hosting with strict tx_signature idempotency, automated E2E/bot/admin test suites, and 7-day retention-vested SOL payouts.',
     impactTr:
@@ -81,7 +81,7 @@ export const projectsData: Project[] = [
     techSpecs: [
       { layer: 'Microservices', details: 'Node.js 20+ monorepo, 6 independent services, BullMQ / Redis Streams' },
       { layer: 'Database', details: 'PostgreSQL 16 with 5 isolated schemas + strict tx_signature idempotency' },
-      { layer: 'Blockchain & Sec', details: 'Solana Mainnet-Beta, fail-closed treasury-pay-svc, Cloudflare Tunnel' },
+      { layer: 'Blockchain & Sec', details: 'Solana Mainnet-Beta, fail-closed treasury circuit breaker, Cloudflare Tunnel' },
       { layer: 'Anti-Abuse & AI', details: 'Sybil/funder DFS graph check, 4h balance monitor, Gemini commentary' },
     ],
     architectureFlow: [
